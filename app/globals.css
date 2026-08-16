@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0c0a1e;
+  --surface: rgba(255, 255, 255, 0.05);
+  --surface-2: rgba(255, 255, 255, 0.09);
+  --card: #171236;
+  --card-2: #1e1846;
+  --foreground: #f5f4ff;
+  --muted: #a6a1c9;
+  --accent: #7c5cff;
+  --accent-2: #9d7bff;
+  --accent-foreground: #ffffff;
+  --border: rgba(255, 255, 255, 0.09);
+  --gold: #ffce4a;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-card: var(--card);
+  --color-card-2: var(--card-2);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-2: var(--accent-2);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+  --color-gold: var(--gold);
+  --font-sans: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: #050416;
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  overscroll-behavior-y: none;
+}
+
+/* The app's dark indigo→purple gradient with a soft top glow, matching the design. */
+.app-bg {
+  background:
+    radial-gradient(120% 60% at 50% -10%, rgba(124, 92, 255, 0.35) 0%, transparent 60%),
+    linear-gradient(180deg, #17123a 0%, #0c0a1e 45%, #0a0819 100%);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Glassy card used across the app */
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 1.25rem;
+}

@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run *)",
+      "Bash(curl -s http://localhost:3100/)",
+      "Bash(kill %1)"
+    ]
+  }
+}

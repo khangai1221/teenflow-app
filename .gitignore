@@ -1,0 +1,48 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files
+.env
+.env*.local
+
+# vercel
+.vercel
+
+# iOS (Xcode) — generated/local, safe to regenerate via `npm run ios:sync`
+ios/App/App/public
+ios/App/CapApp-SPM/.build
+ios/App/App.xcodeproj/xcuserdata
+ios/App/App.xcodeproj/project.xcworkspace/xcuserdata
+ios/App/Pods
+ios/.build
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# all env files are ignored (they hold secrets), EXCEPT the shared template
+.env*
+!.env.example
